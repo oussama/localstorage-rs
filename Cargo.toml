@@ -1,0 +1,14 @@
+[package]
+name = "localstorage"
+version = "0.1.0"
+authors = ["Oussama <md.oussama@gmail.com>"]
+
+
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+stdweb = { git = "https://github.com/koute/stdweb" }
