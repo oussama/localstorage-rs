@@ -45,6 +45,10 @@ where
         &self.val
     }
 
+    pub fn get_mut(&mut self) -> &Option<T> {
+        &mut self.val
+    }
+
     pub fn clear(&mut self) -> Result<(),Error> {
         self.val = None;
         self.storage.remove(&self.name);
